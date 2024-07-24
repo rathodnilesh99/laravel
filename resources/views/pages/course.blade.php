@@ -99,7 +99,7 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-12 gap-30px">
         <!-- courses sidebar -->
-        <div class="md:col-start-1 md:col-span-4 lg:col-span-3">
+        {{-- <div class="md:col-start-1 md:col-span-4 lg:col-span-3">
           <div class="flex flex-col">
             <!-- search input -->
             <div
@@ -269,10 +269,10 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!-- courses main -->
         <div
-          class="md:col-start-5 md:col-span-8 lg:col-start-4 lg:col-span-9 space-y-[30px]"
+          class="md:col-start-12 md:col-span-12 lg:col-start-12 lg:col-span-12 space-y-[30px]"
         >
           <div class="tab-contents">
             <!-- grid ordered cards -->

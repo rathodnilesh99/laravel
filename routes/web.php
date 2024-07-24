@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,6 +11,8 @@ Route::get('/', function () {
 
 Route::get('/course', [CourseController::class, 'index'])->name('course');
 Route::get('/course-details', [CourseController::class, 'show'])->name('course-details');
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/checkout', [CartController::class, 'checkoutPage'])->name('checkout');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
